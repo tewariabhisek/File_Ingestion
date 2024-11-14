@@ -10,7 +10,7 @@ The image depicts a data processing workflow that starts from a Unix file system
 4.	**Spark Job on Databricks**: A Spark job running on Databricks processes the ingested data. This job performs transformations or computations on the data as per the specified requirements.
 5.	**Transformed Data in Parquet Format**: The final output of the Spark job is transformed data, saved in Parquet format, within the Databricks file system.
 
-###Folder Details:
+### Folder Details:
 
 1. **copy_files_to_dbfs**: This folder contains the script that copies the required json file from unix file system to databricks.
 2. **faker_utility**: This is the utility that generates the demo data.

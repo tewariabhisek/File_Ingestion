@@ -1,8 +1,9 @@
 import requests
+import os
 
 # Constants
-DATABRICKS_INSTANCE = "https://community.cloud.databricks.com"  # Replace with your Databricks URL
-TOKEN = "your_personal_access_token"  # Replace with your Personal Access Token
+DATABRICKS_INSTANCE = os.getenv("DATABRICKS_INSTANCE")  # Get from environment variables
+TOKEN = os.getenv("DATABRICKS_TOKEN")  # Get from environment variables
 LOCAL_FILE_PATH = "/path/to/your/largefile.txt"  # Replace with your local file path
 DBFS_DESTINATION_PATH = "/FileStore/largefile.txt"  # DBFS path where the file will be saved
 CHUNK_SIZE = 1 * 1024 * 1024  # 1 MB

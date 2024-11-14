@@ -1,4 +1,4 @@
-# Synthetic Event Generation Script
+# Spark File Processing Script
 
 This script ingests event data from files, processes and cleans the data (including removing duplicates), and saves it in partitioned Parquet format. The data is organized by event date and type for efficient storage and retrieval.
 

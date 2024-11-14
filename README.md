@@ -9,3 +9,9 @@ The image depicts a data processing workflow that starts from a Unix file system
 3.	**Databricks File System (DBFS)**: The data, now in DBFS, serves as an intermediary storage in the Databricks environment. This allows Databricks to access the file for subsequent transformations.
 4.	**Spark Job on Databricks**: A Spark job running on Databricks processes the ingested data. This job performs transformations or computations on the data as per the specified requirements.
 5.	**Transformed Data in Parquet Format**: The final output of the Spark job is transformed data, saved in Parquet format, within the Databricks file system.
+
+###Folder Details:
+
+1. **copy_files_to_dbfs**: This folder contains the script that copies the required json file from unix file system to databricks.
+2. **faker_utility**: This is the utility that generates the demo data.
+3. **spark_data_ingestion**: This is the pyspark utility that contains the pyspark code that processes the file and stores in parquet format.
